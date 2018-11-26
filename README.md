@@ -4,7 +4,7 @@ A ROS1 package providing instructions and examples on utilities such as remote a
 1. Prerequisites (ROS network setup)
 2. Remote roslaunch
 3. Timed roslaunch
-4. Timed remote roslaunch
+4. Remote timed roslaunch
 
 ### Prerequisites
 
@@ -166,7 +166,7 @@ and save it in your local launch folder. You may launch when ready.
 
 Refer to <http://wiki.ros.org/timed_roslaunch> for info on installation.
 
-### Timed remote roslaunch
+### Remote timed roslaunch
 
 See the example launch files.
 
