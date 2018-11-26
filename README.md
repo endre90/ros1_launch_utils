@@ -47,7 +47,7 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
-where xxxxxxxxx is the ROS Network’s name and yyyyyyyyy is the access password.
+where xxxxxxxxx is the ROS Network’s name and yyyyyyyyy is the access password. If using Ubuntu, edit the network connections by deleting the unnecesarry connections.
 
 3. Defining hostnames. It is also recommended to define hostnames for all machines in all machines, so that they can find each other based on names. Do:
 ```
@@ -59,6 +59,10 @@ xxx.xxx.x.xxx    machine_1_hostname
 yyy.yyy.y.yyy    machine_2_hostname
 zzz.zzz.z.zzz    machine_3_hostname
 and so on...
+```
+You can alter the hostname of the local machine by editing the hostname file with:
+```
+sudo nano /etc/hostname
 ```
 
 4. Deleting ROS logs. In some cases, depending on the task of the remote machine, the ROS log files can easily fill the available storage space. To prevent this, check the size of ros logs regularly with:
@@ -125,7 +129,7 @@ source /opt/ros/kinetic/setup.bash
 source /home/username/catkin_ws/devel/setup.bash
 exec "$@"
 ```
-and save it in the remote machine's ros workspace's src folder.
+and save it in the remote machine's ros workspace folder.
 
 6. Make that file executable with:
 ```
@@ -141,7 +145,7 @@ sudo chmod +x remote_env.sh
     address="zzz.zzz.z.zzz"
     user="remote_username"
     password="password"
-    env-loader="/home/remote_username/catkin_ws/src/remoteenv.sh"
+    env-loader="$(find ros1_launch_utils)/remoteenv.sh"
   />
   <!-- Example node launch -->
   <node

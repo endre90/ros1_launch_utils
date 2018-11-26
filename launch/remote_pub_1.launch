@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<launch>
+  <machine
+    name="name"
+    address="192.168.1.2"
+    user="user"
+    password="password"
+    env-loader="$(find ros1_launch_utils)/remoteenv.sh"
+  />
+  
+  <!-- simple publisher -->
+  <node
+    machine="name"
+    name="simple_pub_1"
+    pkg="ros1_launch_utils"
+    type="simple_pub_1.py"
+  />
+</launch>
