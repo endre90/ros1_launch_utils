@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find ros1_launch_utils)/launch/remote_pub_1.launch"/>
+  <include file="$(find ros1_launch_utils)/launch/remote_pub_2.launch"/>
+</launch>

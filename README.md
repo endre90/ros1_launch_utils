@@ -1,6 +1,10 @@
 # ros1_launch_utils
 
-A ROS1 package providing instructions and examples on utilities such as remote and timed roslaunch.
+A ROS1 package providing instructions and examples on utilities such as remote and timed roslaunch. Readme content:
+1. Prerequisites (ROS network setup)
+2. Remote roslaunch
+3. Timed roslaunch
+4. Timed remote roslaunch
 
 ### Prerequisites
 
@@ -157,5 +161,13 @@ sudo chmod +x remote_env.sh
 </launch>
 ```
 and save it in your local launch folder. You may launch when ready.
+
+### Timed roslaunch
+
+Refer to <http://wiki.ros.org/timed_roslaunch> for info on installation.
+
+### Timed remote roslaunch
+
+See the example launch files.
 
 

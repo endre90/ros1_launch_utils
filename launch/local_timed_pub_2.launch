@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+   <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="5" />
+    <arg name="pkg" value="ros1_launch_utils" />
+    <arg name="file" value="local_pub_2.launch" />
+    <arg name="node_name" value="simple_pub_2" />
+  </include>
+</launch>

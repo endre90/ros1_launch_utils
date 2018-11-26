@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="simple_pub_1" pkg="ros1_launch_utils" type="simple_pub_1.py">
+  </node>
+</launch>
